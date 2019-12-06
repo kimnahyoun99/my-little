@@ -1,0 +1,395 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+a,
+a:link {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    font: 16px "Nanum Gothic", "Roboto Condensed", sans-serif;
+    color: #000;
+    margin: 0 auto;
+}
+
+.notext {
+    display: none;
+}
+
+#wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*menu_top*/
+header {
+    width: 100%;
+    height: 200px;
+    border-bottom: 3px solid #a9a9a9;
+}
+
+#menu_top {
+    position: relative;
+}
+
+/*burger*/
+#burger {
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    top: 15px;
+    position: absolute;
+    z-index: 9999;
+}
+
+#burger div {
+    position: absolute;
+    height: 3px;
+    background: #000;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+#burger .top_bar {
+    top: 45px;
+    width: 90%;
+    left: 15%;
+}
+
+#burger .mid_bar {
+    top: 53px;
+    width: 90%;
+    left: 15%;
+}
+
+#burger .bot_bar {
+    top: 61px;
+    width: 90%;
+    left: 15%;
+}
+
+#burger.on .top_bar {
+    top: 11px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+#burger.on .mid_bar {
+    width: 0;
+    left: 50%;
+}
+
+#burger.on .bot_bar {
+    top: 11px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+#tnb {
+    float: right;
+    width: 350px;
+    height: 40px;
+    top: 0;
+    font-size: 10px;
+}
+
+#tnb>ul>li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 12px;
+}
+
+#logo {
+    /* margin-top:100px; */
+    position: absolute;
+    top: 30px;
+    left: 40%;
+    width: 200px;
+    height: 100px;
+}
+
+#gnb {
+    position: absolute;
+    top: 160px;
+    left: 12%;
+    width: 80%;
+    height: 50px;
+
+}
+
+#gnb ul li {
+    float: left;
+    padding-left: 40px;
+}
+
+#gnb li a {
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+/*index style*/
+/*section slide*/
+#slidemain {
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide {
+    position: relative;
+    width: 4800px;
+    height: 673px;
+}
+
+#slide img {
+    float: left;
+}
+
+
+/*secrion event*/
+#event {
+    margin-top: 15px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#eventday {
+    position: absolute;
+    top: 0;
+    left: 3%;
+}
+
+#member {
+    position: absolute;
+    top: 3%;
+    left: 32%;
+}
+
+#delivery {
+    position: absolute;
+    top: 51%;
+    left: 32%;
+}
+
+#revlew {
+    position: absolute;
+    top: 0;
+    right: 3%;
+}
+
+
+/*secrion new arrival*/
+new arrival {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.arr {
+    margin: 40px 0 20px 0;
+}
+
+#arrival_set {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.arrival_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arrival_2 {
+    position: absolute;
+    top: 0;
+    left: 35%;
+}
+
+.arrival_3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/*login.html*/
+
+#login_box{
+    width:40%;
+    border:2px solid #a9a9a9;
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.memberlogin{
+    text-align: center;
+    padding:30px;
+}
+.memberlogin p{
+    font-size:20px;
+}
+#loginF{
+    width:480px;
+    height: 60px;
+    position: relative;
+}
+#login_id{
+    width:60%;
+    height: 30px;
+    padding-left:5%;
+    float: left;
+}
+#login_id p{
+    width:300px;
+    border-bottom:2px solid #a9a9a9
+}
+#login_pw{
+    width:60%;
+    height: 30px;
+    padding-left:5%;
+    float: left;
+}
+#login_pw p{
+    width:300px;
+    border-bottom:2px solid #a9a9a9
+}
+#login_button{
+    width:25%;
+    height:60px;
+    position: absolute;
+    top:5px;
+    right: 0;
+}
+#button_login{
+    width:60px;
+    height: 60px;
+}
+.idpwsr{
+    text-align: center;
+    padding:20px;
+    
+}
+#login_member{
+    width:100%;
+    height: 100px;
+    position: relative;
+}
+#login_newmember{
+    width:50%;
+    position: absolute;
+    top:0;
+    left:5%;
+}
+#login_newbutton{
+    width:50%;
+    position: absolute;
+    top:0;
+    right:-18%;
+}
+#nuwbutton{
+    width:90px;
+    height: 35px;
+}
+#nomember{
+    width:100%;
+    height:50px;
+    text-align: center;
+}
+#nomemberbutton{
+    width:90px;
+    height: 40px;
+}
+#login_slide{
+    text-align: center;
+    margin-bottom:50px;
+}
+
+
+
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 150px;
+    background: #a9a9a9;
+    position: relative;
+}
+#foo_call{
+    margin-top:15px;
+    position: absolute;
+    top:10%;
+    left:9%;
+}
+#foo_call p{
+    color:#fff;
+    padding:5px;
+}
+#foo_bank{
+    margin-top:15px;
+    position: absolute;
+    top:10%;
+    left:33%;
+}
+#foo_bank p{
+    color:#fff;
+    padding:5px;
+}
+#foo_delivery{
+    margin-top:15px;
+    position: absolute;
+    top:10%;
+    left:58%;
+}
+#foo_delivery p{
+    color:#fff;
+    padding:5px;
+}
+#foo_snsicon{
+    margin-top:15px;
+    position: absolute;
+    top:10%;
+    left:80%;
+}
+#foo_snsicon p{
+    color:#fff;
+    padding:5px;
+}

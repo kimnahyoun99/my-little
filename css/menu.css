@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+a,
+a:link {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    font: 16px "Nanum Gothic", "Roboto Condensed", sans-serif;
+    color: #000;
+    margin: 0 auto;
+}
+
+.notext {
+    display: none;
+}
+
+
+/*new 10%*/
+#new{
+    width:100%;
+    
+}
+#new-f{
+    width:100%;
+}
+#new1{
+    float: left;
+}
+#new2{
+    float: left;
+}
+#new3{
+    float: left;
+}
